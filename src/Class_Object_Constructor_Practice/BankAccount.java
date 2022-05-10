@@ -11,13 +11,19 @@ public class BankAccount {
       this.accountBalance = accountBalance;
     }
 
-    public void deposit( Double amountToDeposit) {
-        accountBalance += amountToDeposit;
+    public double deposit( Double amountToDeposit) {
+       accountBalance += amountToDeposit;
+       return amountToDeposit;
     }
 
-    public void withdrawal(Double amountWithdrew) {
-
+    public double withdrawal(Double amountWithdrew) {
         accountBalance -= amountWithdrew;
+        return amountWithdrew;
+    }
+
+    public Double transfer(BankAccount acc, double amount) {
+       return acc.deposit((this.withdrawal(amount)));
+
     }
 
     public void accountInfo() {

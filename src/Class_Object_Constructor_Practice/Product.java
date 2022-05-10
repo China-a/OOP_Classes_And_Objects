@@ -18,5 +18,4 @@ public String totalCost( ) {
 public String printProduct() {
 return "Gallon of " + productName + " costs $" + productCost + " and " + productQuantity + " units were purchased";
 }
-
 }

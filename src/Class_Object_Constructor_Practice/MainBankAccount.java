@@ -9,11 +9,11 @@ public class MainBankAccount {
         account1.deposit(100.00);
         account1.accountInfo();
 
-        account2.withdrawal(100.00);
-        account2.accountInfo();
 
-        account3.deposit(100.00);
+        account2.transfer(account3,100.00);
+        account2.accountInfo();
         account3.accountInfo();
+
 
     }
 }
